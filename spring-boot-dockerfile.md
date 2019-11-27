@@ -33,10 +33,10 @@ docker build -t spring-boot-example .
 ## Start the image as a service
 
 ```
-docker container run -d -p 80:8080 spring-boot-example
+docker container run -d -p 8080:8080 spring-boot-example
 ```
 
 - Creates the container and detaches it (-d)
-- Opens a port for the app which uses 8080 and exposes it to localhost:80
+- `-p 8080:8080` opens up a port to the app on port 8080 through the bridge adapter to the localhost:8080
 - `docker container ls` will show the services that are running
 - `docker container stop [container id]` will stop the service
