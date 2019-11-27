@@ -2,6 +2,14 @@
 
 - [Spring Boot with Dockerfile](spring-boot-dockerfile.md)
 
+- Spring Cloud Kubernetes app using AP4K for YAML generation for Kubernetes
+  - kubectl create --filename target/classes/META-INF/ap4k/kubernetes.yml
+  - Chaos-monkey integration
+  - Swagger API
+  - Kubernetic to monitor the pods/deployment/config
+  - GatewayApplication.java w/ RouteLocator containing load balanced URI endpoints containing service names
+  - https://www.youtube.com/watch?v=u64jexEX_RY
+
 - Kubernetes secrets file being read by a Spring Boot container project
 
 - Kubernetes cluster of microservices
