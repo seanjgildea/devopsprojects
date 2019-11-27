@@ -1,6 +1,6 @@
 # A collection of DevOps for 2020 
 
-- [Spring Boot with Dockerfile](spring-boot-dockerfile.md)
+- [Spring Boot with Dockerfile and external properties](spring-boot-dockerfile.md)
 
 - Spring Cloud Kubernetes app using AP4K for YAML generation for Kubernetes
   - kubectl create --filename target/classes/META-INF/ap4k/kubernetes.yml
