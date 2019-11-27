@@ -30,7 +30,7 @@ docker build -t spring-boot-example .
 - The effect is to create a temporary file on your host under "/var/lib/docker" and link it to the container under "/tmp". 
 - This step is optional for simple applications, but can be necessary for other Spring Boot applications if they need to actually write in the filesystem.
 
-## Deploy the image
+## Start the image as a service
 
 ```
 docker container run -d -p 80:8080 spring-boot-example
@@ -38,4 +38,5 @@ docker container run -d -p 80:8080 spring-boot-example
 
 - Creates the container and detaches it (-d)
 - Opens a port for the app which uses 8080 and exposes it to localhost:80
-
+- `docker container ls` will show the services that are running
+- `docker container stop [container id]` will stop the service
