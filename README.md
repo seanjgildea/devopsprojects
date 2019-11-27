@@ -2,6 +2,8 @@
 
 - [Spring Boot with Dockerfile](spring-boot-dockerfile.md)
 
+- Docker secrets file being read by a Spring Boot container project
+
 - Kubernetes cluster of microservices
 
 - Lambda functions running in a Docker container deployed
