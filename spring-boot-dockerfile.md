@@ -43,8 +43,6 @@ docker container run -d -p 8080:8080 spring-boot-example
 
 ## Start the image in a docker-compose file with environment variable
 
-- We also add an environment variable below that Spring Boot application.yml replaces {some.value}
-
 ```
 version: '3'
 
