@@ -40,3 +40,24 @@ docker container run -d -p 8080:8080 spring-boot-example
 - `-p 8080:8080` opens up a port to the app on port 8080 through the bridge adapter to the localhost:8080
 - `docker container ls` will show the services that are running
 - `docker container stop [container id]` will stop the service
+
+## Start the image in a docker-compose file with environment variable
+
+- We also add an environment variable below that Spring Boot application.yml replaces {some.value}
+
+```
+version: '3'
+
+services:
+  java:
+    image: spring-boot-example
+    build: .
+    ports: 
+      - "8074:8080"
+    environment:
+      - some.value=Happy Holidays!
+```
+
+- `docker-compose up` to start it , `--build` to force rebuilding the image if it's already built
+- Load up localhost:8074 in a browser to see the page and injected environment variable
+
