@@ -58,4 +58,4 @@ services:
 
 - `docker-compose up` to start it , `--build` to force rebuilding the image if it's already built
 - Load up localhost:8074 in a browser to see the page and injected environment variable
-
+- `docker-compose down` to stop
