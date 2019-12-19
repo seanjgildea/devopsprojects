@@ -25,3 +25,11 @@
 - AWS Workflow
 
 - NGinx reverse proxy with cnames
+
+
+- For kubernetes, you typically do not need the ssh key. You use kubernetes commands to get a shell within a pod
+- kubectl get pods
+- kubectl exec -it pod sh
+- kubectl config set-context --current --namespace=dev-ep6
+- kubectl get namespace
+- kubectx to switch namespaces
