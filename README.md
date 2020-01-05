@@ -2,6 +2,8 @@
 
 - [Spring Boot with Dockerfile and external properties](spring-boot-dockerfile.md)
 
+- [Terraform, Docker, ECR and AWS](terraform_docker_ecr_aws.md)
+
 - Spring Cloud Kubernetes app using AP4K for YAML generation for Kubernetes
   - kubectl create --filename target/classes/META-INF/ap4k/kubernetes.yml
   - Chaos-monkey integration
