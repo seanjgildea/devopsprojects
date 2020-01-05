@@ -8,12 +8,22 @@
 ```
 
 - Use the output to log into AWS Repository
-- Next build the docker image 
+- Next build the docker image but make sure to tag it with the ECR repo
+
+```
+  docker build -t xxxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/myapp:1
+```
+
 - From the directory you built your image, run the following command to push the docker image to ECR
 
 ```
   docker push xxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/myapp
   
+```
+- Login to the AWS Console and go to ECR .... or type the following command 
+
+```
+  aws ecr describe-repositories
 ```
 
 
