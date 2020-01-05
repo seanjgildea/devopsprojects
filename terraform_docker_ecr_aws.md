@@ -8,6 +8,7 @@
 ```
 
 - Use the output to log into AWS Repository
+- Next build the docker image 
 - From the directory you built your image, run the following command to push the docker image to ECR
 
 ```
