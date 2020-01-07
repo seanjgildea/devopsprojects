@@ -12,21 +12,8 @@
   - GatewayApplication.java w/ RouteLocator containing load balanced URI endpoints containing service names
   - https://www.youtube.com/watch?v=u64jexEX_RY
 
-- Kubernetes secrets file being read by a Spring Boot container project
-
-- Kubernetes cluster of microservices
-
-- Lambda functions running in a Docker container deployed
-
-- Lambda functions that hit Amazon MQ and DynamoDB backend
-
-- Running a container on EC2
-
-- Step Functions
-
-- AWS Workflow
-
-- NGinx reverse proxy with cnames
+- In Stage 1, Use a JDK to build the image and in Stage 2, use the JAR + a JRE as a base image. Save bloat. 
+- Use docker-compose.dev.yml or docker-compose.prod.yml names for different environments
 
 
 - For kubernetes, you typically do not need the ssh key. You use kubernetes commands to get a shell within a pod
