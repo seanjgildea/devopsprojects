@@ -12,9 +12,12 @@
   - GatewayApplication.java w/ RouteLocator containing load balanced URI endpoints containing service names
   - https://www.youtube.com/watch?v=u64jexEX_RY
 
+## Docker with Java
+
 - In Stage 1, Use a JDK to build the image and in Stage 2, use the JAR + a JRE as a base image. Save bloat. 
 - Use docker-compose.dev.yml or docker-compose.prod.yml names for different environments
 
+## K8's
 
 - For kubernetes, you typically do not need the ssh key. You use kubernetes commands to get a shell within a pod
 - kubectl get pods
