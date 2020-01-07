@@ -16,6 +16,8 @@
 
 - In Stage 1, Use a JDK to build the image and in Stage 2, use the JAR + a JRE as a base image. Save bloat. 
 - Use docker-compose.dev.yml or docker-compose.prod.yml names for different environments
+- Use docker --memory to set a limit for the container
+- Use docker stats to monitor resources in your container
 
 ## K8's
 
