@@ -27,3 +27,15 @@
 - kubectl config set-context --current --namespace=dev-ep6
 - kubectl get namespace
 - kubectx to switch namespaces
+
+## Best practices for automated K8s, Docker, Helm, TF deployments with Python Secrets
+
+- initEnvironment variables in a helm/templates/configmap.yaml, for example...
+  - export rabbitHost="{{ .Values.sgildea.rabbit.host }}"
+- initEnvironment is imported by 
+- volumeMounts
+- initContainer has an envsubst command like sed on steroids
+  - bash
+  - -c
+  - envsubst < /directory/file.properties > /dir/file.properties
+  
