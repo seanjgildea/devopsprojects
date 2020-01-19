@@ -32,6 +32,9 @@
 
 - Show repos with ``` helm repo list ```
 - Add a repo with ``` helm add repo stable https://kubernetes-charts.storage.googleapis.com ```
+- Install an app via a chart on minikube ``` helm install stable/redis --set serviceType=NodePort --generate-name ``` 
+- Delete a helm chart app on minikube ``` helm delete [generated-name] ``` 
+
 
 ## Best practices for automated K8s, Docker, Helm, TF deployments with Python Secrets
 
