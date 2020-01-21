@@ -1,4 +1,4 @@
-# A collection of DevOps for 2020 
+# A collection of DevOps Notes for 2020 
 
 - [Spring Boot with Dockerfile and external properties](spring-boot-dockerfile.md)
 
