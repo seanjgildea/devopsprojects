@@ -38,9 +38,8 @@
 
 ## Best practices for automated K8s, Docker, Helm, TF deployments with Python Secrets
 
-- Setup autocompletion with Bash 5.0 
-- Nicer prompt with iTerm2 
 - https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961
+- https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 - initEnvironment variables in a helm/templates/configmap.yaml, for example...
   - export rabbitHost="{{ .Values.sgildea.rabbit.host }}"
 - initEnvironment is imported by 
