@@ -48,4 +48,6 @@
   - bash
   - -c
   - envsubst < /directory/file.properties > /dir/file.properties
+  - Ansible is the "configure the vm and install extra packages"
+  - Packer is "run the virtualization and initial bootstrapping before handing over to ansible"
   
